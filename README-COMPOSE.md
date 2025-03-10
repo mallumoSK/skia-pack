@@ -1,21 +1,21 @@
 # Compose 1.7.3
 
-## Building locally
-
 ###
 ```shell
 git clone --branch compose/1.7.3 https://github.com/mallumoSK/skia-pack.git && cd skia-pack
 ```
-
-### OpenGL ES ARM64
+### LINUX
+#### OpenGL ES ARM64
 ```shell
 sudo ./script/prepare_linux_arm.sh
 ```
 
-###  OpenGL AMD64
+####  OpenGL AMD64
 ```shell
 sudo  ./script/prepare_linux.sh
 ```
+
+#### Building locally release
 
 ```sh
 python3 script/checkout.py --version m126-6bfb13368b
@@ -23,7 +23,7 @@ python3 script/build.py
 python3 script/archive.py --version m126-6bfb13368b
 ```
 
-To build a debug build:
+#### Building locally debug
 
 ```sh
 python3 script/checkout.py --version m126-6bfb13368b
