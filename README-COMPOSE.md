@@ -2,15 +2,18 @@
 
 ## Building locally
 
+###
+```shell
+git clone --branch compose/1.7.3 https://github.com/mallumoSK/skia-pack.git && cd skia-pack
+```
+
 ### OpenGL ES ARM64
 ```shell
-git clone --branch compose-egl/1.7.3 https://github.com/mallumoSK/skia-pack.git
 sudo ./script/prepare_linux_arm.sh
 ```
 
 ###  OpenGL AMD64
 ```shell
-git clone  --branch compose/1.7.3 https://github.com/mallumoSK/skia-pack.git
 sudo  ./script/prepare_linux.sh
 ```
 
