@@ -27,7 +27,6 @@ def main():
 
   args += [
     'target_cpu="' + machine + '"',
-    'skia_use_egl=true',
     'skia_use_system_expat=false',
     'skia_use_system_libjpeg_turbo=false',
     'skia_use_system_libpng=false',
@@ -70,6 +69,7 @@ def main():
     if 'arm64' == machine:
         # TODO: use clang on all targets!
         args += [
+            'skia_use_egl=true',
             'skia_gl_standard="gles"',
             'extra_cflags_cc=["-fno-exceptions", "-fno-rtti", "-flax-vector-conversions=all", "-D_GLIBCXX_USE_CXX11_ABI=0"]',
             'cc="clang"',
